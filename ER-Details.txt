@@ -1,0 +1,98 @@
+
+                                             eTofa------online gift shoppee
+                                        key to visit your heart
+
+ER Diagram:
+Employee/staff:
+        employeeId-----pk
+        employeeName
+        email
+        contactNo
+        role
+
+Customer:
+            customerId---------------------pk
+            customerName
+            username
+            password
+            address
+            contactNo
+            
+            
+
+Shopper:
+           shopperId------------pk
+           ShopTitle
+           Email
+           contactNo
+
+Product:
+            productId-----------pk
+            title
+            description
+            price
+            image
+            categoryId-------pk
+Category:
+          categoryId--------------pk
+          categoryName
+          //no. of stock
+           shopperId--------------fk
+
+shoppingCart 
+
+       shoppingCartId
+       productId                    
+       customerId
+           
+Order Details:
+           orderId-----------pk
+           no. of iteams
+           totalAmt
+           cartId
+           Rxid---------------fk
+Payment:
+         paymentId-------------pk
+         paymentDate
+         accountId-----------fk
+         orderId-------------fk
+
+
+Shipment:
+          shipId---------------pk
+          shipingDate
+          orderId--------------fk
+          status    // delivered or pending
+          empId---------------fk
+
+
+ReceiverDetails:
+          receiverId--------pk
+          Rxfirstname
+          RxlastName
+          Address
+          ContactNO
+          CustomerId---------fk
+             
+
+Claim:----store login information
+
+      userid------------pk
+      username
+      password
+     customerid  -------------fk 
+
+
+BankDetails
+
+ 	acoountid ---------pk
+ 	accountno
+	ifsc 
+	balance 
+ 	
+
+
+
+
+
+
